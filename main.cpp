@@ -1,17 +1,18 @@
 #include <iostream>
-#include "Encrypt.h"
+#include <string>
+#include "Caesar.h"
 
 using namespace std;
 
 int main() {
 
-    Encrypt e;
+    Caesar algo(3);
 
-    //e.read(true, "../plain.txt");
-    e.read(false, "../plain.txt");
+    string message = "LES sanglots longs des violons de l'automne blessent mon coeur d'une langueur monotone.";
+    algo.setPlainMessage(message);
 
-    //cout << e.get_plain() << endl;
-    cout << e.get_cipher() << endl;
+    algo.encode();
 
+    cout << algo.getCipher() << endl;
     return 0;
 }

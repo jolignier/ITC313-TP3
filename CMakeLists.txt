@@ -3,4 +3,15 @@ project(ITC313-TP3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(tp3 main.cpp Encrypt.cpp Encrypt.h)
+set(SRCS
+        main.cpp
+        Encrypt.cpp
+        Caesar.cpp
+    )
+
+set(HEADERS
+        Encrypt.h
+        Caesar.h
+    )
+
+add_executable(tp3 ${SRCS} ${HEADERS})

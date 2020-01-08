@@ -6,12 +6,11 @@
 #include <iostream>
 #include "Encrypt.h"
 
-Encrypt::Encrypt() {}
-string Encrypt::get_cipher() const {
+string Encrypt::getCipher() const {
     return m_cipher;
 }
 
-string Encrypt::get_plain() const {
+string Encrypt::getPlain() const {
     return m_plain;
 }
 

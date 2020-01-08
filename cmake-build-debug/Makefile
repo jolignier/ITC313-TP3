@@ -123,6 +123,33 @@ tp3/fast:
 	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/build
 .PHONY : tp3/fast
 
+Caesar.o: Caesar.cpp.o
+
+.PHONY : Caesar.o
+
+# target to build an object file
+Caesar.cpp.o:
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/Caesar.cpp.o
+.PHONY : Caesar.cpp.o
+
+Caesar.i: Caesar.cpp.i
+
+.PHONY : Caesar.i
+
+# target to preprocess a source file
+Caesar.cpp.i:
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/Caesar.cpp.i
+.PHONY : Caesar.cpp.i
+
+Caesar.s: Caesar.cpp.s
+
+.PHONY : Caesar.s
+
+# target to generate assembly for a file
+Caesar.cpp.s:
+	$(MAKE) -f CMakeFiles/tp3.dir/build.make CMakeFiles/tp3.dir/Caesar.cpp.s
+.PHONY : Caesar.cpp.s
+
 Encrypt.o: Encrypt.cpp.o
 
 .PHONY : Encrypt.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... tp3"
 	@echo "... edit_cache"
+	@echo "... Caesar.o"
+	@echo "... Caesar.i"
+	@echo "... Caesar.s"
 	@echo "... Encrypt.o"
 	@echo "... Encrypt.i"
 	@echo "... Encrypt.s"

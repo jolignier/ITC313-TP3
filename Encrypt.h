@@ -16,15 +16,18 @@ protected:
     string m_cipher;
 
 public:
-    Encrypt();
-    string get_plain() const;
-    string get_cipher() const;
+    string getPlain() const;
+    string getCipher() const;
 
     bool read(bool isPlain, string filename);
     bool write(bool isPlain, string filename);
 
-     string encode() ;
-     string decode() ;
+    /*
+     * Abstract method to be implemented in child classes to
+     * encode or decode according to their own algorithm
+     */
+    virtual void encode() = 0;
+    virtual void decode() = 0;
 
 };
 
